@@ -25,8 +25,8 @@ This is the simplest case. Get the script in whatever way you prefer and include
 <script src="//path/to/videojs-slides.min.js"></script>
 <script>
   var player = videojs('my-video');
-
-  player.slides();
+  slides = [{url:'image url',time:9}]
+  player.slides(slide);
 </script>
 ```
 

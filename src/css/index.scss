@@ -2,7 +2,7 @@
   &.vjs-slides {
     display: block;
   }
-  .video-slides{
+  .video-slides {
     display: flex;
     z-index: 1;
     POSITION: absolute;
@@ -11,9 +11,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    li{
+    li {
       display: none;
-      img{
+      img {
         max-width: 100%;
       }
     }
