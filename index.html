@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>videojs-slides Demo</title>
+  <link href="http://vjs.zencdn.net/5.16.0/video-js.css" rel="stylesheet">
+  <link href="/dist/browser/videojs-slides.css" rel="stylesheet">
+</head>
+<body>
+  <video id="videojs-slides-player" class="video-js vjs-default-skin" controls>
+    <source src="//vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+    <source src="//vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+  </video>
+  <ul>
+    <li><a href="/test/">Run unit tests in browser.</a></li>
+    <li><a href="/dist/docs/api/">Read generated api docs.</a></li>
+    <li><a href="/dist/docs/manual/">Read generated manual docs.</a></li>
+  </ul>
+   <script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
+  <script src="/dist/browser/videojs-slides.js"></script>
+  <script>
+    (function(window, videojs) {
+      var player = window.player = videojs('videojs-slides-player');
+      var slides = [
+        {url : 'img/dnamic.png',time : 9},
+        {url : 'img/dnamic.png',time : 12},
+      ];
+
+      player.slides({slides: slides});
+    }(window, window.videojs));
+  </script>
+</body>
+</html>
